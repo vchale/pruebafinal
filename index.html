@@ -2,90 +2,250 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - E'Chale Sabor</title>
-    <link rel="stylesheet" href="style.css"> <!-- Asegúrate de tener este archivo o ajusta según sea necesario -->
+    <title>E'Chale Sabor</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1 class="main-title">Contáctanos</h1>
-        <p>Estamos aquí para ayudarte. ¡No dudes en comunicarte con nosotros!</p>
-    </header>
 
-    <main>
-        <section class="contact-info">
-            <h2 class="sub-title">Información de Contacto</h2>
-            <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 997001556</p>
-            <p><i class="fas fa-envelope"></i> <strong>Correo Electrónico:</strong> contacto@echalesabor.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Jr. Salaverry 109 - Lima, Perú</p>
-        </section>
+<header class="header">
+    <div class="menu container">
+        <a href="#inicio" class="logo">
+            <img src="img/logo.png" alt="Logo E'Chale Sabor" style="height: 50px;"> <!-- Ajusta la altura según sea necesario -->
+        </a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="img/menu-icon.png" class="menu-icono" alt="Menú">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#servicios"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
+                <li><a href="#precios"><i class="fas fa-box"></i> Precios</a></li>
+                <li><a href="#reserva"><i class="fas fa-envelope"></i> Reservas</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-content container">
+        <div class="header-txt">
+            <h1>E'Chale Sabor</h1>
+            <span>Snacks Bar</span>
+            <p>
+                Bienvenido a E'Chale Sabor: tu aliado perfecto para cualquier evento. 
+                Ofrecemos una deliciosa variedad de snacks que harán de tu celebración una experiencia inolvidable. 
+                Desde pequeños encuentros hasta grandes fiestas. ¡Déjanos ser parte de tu celebración y sorprende a tus invitados!
+            </p>
+            <a href="contacto.html" class="btn-1">Contáctanos</a>
+        </div>
+        <div class="header-dir">
+            <div class="dir">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Dirección</h3>
+                <p>Jr. Salaverry 109 - Lima, Perú</p>
+            </div>
+            <div class="dir">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Teléfono</h3>
+                <p>997001556</p>
+            </div>
+            <div class="dir">
+                <i class="fas fa-clock"></i>
+                <h3>Horario</h3>
+                <p>9 am - 6 pm</p>
+            </div>
+        </div>
+    </div>
+</header>
+   
 
-        <section id="map" class="map">
-            <h2 class="sub-title">Ubicación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.012574843016!2d-77.02117168570365!3d-12.046456861825438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c4b1a2c8b7b7%3A0xa313eb46c448fa66!2sJr.%20Salaverry%20109%2C%20Lima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sco!4v1695848679001!5m2!1ses-419!2sco" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+    <section id="inicio" class="welcome">
+        <div class="welcome-1"></div>
+        <div class="welcome-2">
+            <h2>Bienvenido a tu snack bar favorito</h2>
+            <p class="b1">
+                En E'Chale Sabor, nos apasiona transformar cada evento en una celebración inolvidable. 
+                Ofrecemos snacks artesanales elaborados con ingredientes frescos y de calidad, porque creemos 
+                que cada bocado debe ser una experiencia única.
+            </p>
+            <p>
+                Nuestro compromiso con la excelencia se refleja en cada receta, 
+                donde sabores auténticos y presentaciones atractivas se combinan para deleitar a tus invitados. 
+                Trabajamos de la mano contigo para personalizar cada detalle, asegurando que nuestros snacks se alineen con la temática de tu evento.
+                Tu satisfacción y la de tus invitados son nuestra prioridad. En E'Chale Sabor, cada celebración merece un toque especial, y estamos aquí para hacerlo posible.
+            </p>
+        </div>
+    </section>
 
-        <section class="social-media">
-            <h2 class="sub-title">Síguenos en Redes Sociales</h2>
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-        </section>
-    </main>
+    <main id="servicios" class="services container">
+        <div class="services-txt">
+            <h2>Nuestros Servicios</h2>
+            <hr>
+            <p>
+                Un servicio de snacks bar ofrece bocadillos y bebidas para eventos, oficinas, fiestas, reuniones o establecimientos. 
+                Los servicios pueden adaptarse según el tipo de evento y la audiencia. Aquí te detallo algunos de los servicios que 
+                suelen ofrecer los snacks bar:
+            </p>
+        </div>
+        <div class="services-group">
+            <div class="services-1">
+                <i class="fas fa-utensils"></i>
+                <h3>Mesas de Snacks Personalizadas</h3>
+                <ul>
+                    <li><strong>Decoración temática:</strong> Se decora la mesa con una temática específica (cumpleaños, bodas, eventos corporativos).</li>
+                    <li><strong>Variedad de snacks:</strong> Chips, galletas, dulces, chocolates, palomitas de maíz, y frutas.</li>
+                    <li><strong>Opciones saludables:</strong> Frutas deshidratadas, nueces, yogur, y opciones sin azúcar.</li>
+                </ul>
+            </div>
+            <div class="services-1">
+                <i class="fas fa-birthday-cake"></i>
+                <h3>Paquetes para Oficinas</h3>
+                <ul>
+                    <li>Entrega regular de snacks variados para oficinas.</li>
+                    <li>Paquetes semanales o mensuales.</li>
+                    <li>Variedad que incluye opciones dulces y saladas para diferentes gustos.</li>
+                </ul>
+            </div>
+            <div class="services-1">
+                <i class="fas fa-cogs"></i>
+                <h3>Alquiler de Maquinaria</h3>
+                <ul>
+                    <li>Máquinas de palomitas de maíz, algodones de azúcar, y fuentes de chocolate.</li>
+                    <li>Servicios de montaje y desmontaje de la maquinaria.</li>
+                </ul>
+            </div>
+            <div class="services-1">
+                <i class="fas fa-user-friends"></i>
+                <h3>Personal de Servicio</h3>
+                <ul>
+                    <li>Para eventos más grandes, se incluye personal para servir y mantener la mesa de snacks organizada.</li>
+                    <li>Asistencia en cocteles, atención al cliente, y limpieza.</li>
+                </ul>
+            </div>
+            <div class="services-1">
+                <i class="fas fa-briefcase"></i>
+                <h3>Catering para Eventos Corporativos</h3>
+                <ul>
+                    <li>Servicio formal de snacks y bebidas para reuniones empresariales, capacitaciones, y conferencias.</li>
+                    <li>Opciones personalizables para adaptarse a la imagen de la empresa.</li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="btn-1"> Más Información</a>
+    </main>  
 
+    <section id="precios" class="prices">
+        <div class="prices-1">
+            <h2>Lista de Precios</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing 
+                elit. Voluptatem repellendus, quae facilis.
+            </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Snacks dulces (x hora)</th>
+                        <td>s/.100 </td>
+                    </tr>
+                    <tr>
+                        <th>Snacks salados (x hora)</th>
+                        <td>s/.100 </td>
+                    </tr>
+                    <tr>
+                        <th>Snacks saludables (x hora)</th>
+                        <td>s/.100 </td>    
+                    </tr>
+                    <tr>
+                        <th>Snacks criollos (x hora)</th>
+                        <td>s/.100 </td>    
+                    </tr>
+                    <tr>
+                        <th>Snacks de quesos (x hora)</th>
+                        <td>s/.100 </td>    
+                    </tr>
+                    <tr>
+                        <th>Snacks vegetarianos (x hora)</th>
+                        <td>s/.100 </td>    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="prices-2"></div>
+    </section>
+
+    <section id="contacto" class="personal container">
+        <div class="personal-txt">
+            <h2>Nuestros Eventos</h2>
+            <hr>
+            <p>
+                Ofrecemos un servicio de catering personalizado para todo tipo de eventos, desde fiestas privadas hasta eventos corporativos. 
+                Nos encargamos de la selección y presentación de snacks, adaptados a las preferencias de tus invitados.
+            </p>
+        </div>
+
+        <div class="personal-group">
+            <div class="personal-1">
+                <i class="fas fa-gift"></i>
+                <h3>Reuniones Sociales</h3>
+                <img src="img/evento 4.png" alt="Descripción de la imagen" class="welcome-image">
+                <p>
+                    Un encuentro informal entre amigos o familiares, ideal para disfrutar de deliciosos snacks mientras se comparten risas y buenos momentos.
+                </p>
+            </div>
+
+            <div class="personal-1">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Eventos de Fiesta </h3>
+                <img src="img/evento 1.png" alt="Descripción de la imagen" class="welcome-image">
+                <p>
+                    Un evento exclusivo, como un cumpleaños o un aniversario, donde se ofrece una variedad 
+                    de snacks personalizados para satisfacer las preferencias de los asistentes.
+                </p>
+            </div>
+            <div class="personal-1">
+                <i class="fas fa-birthday-cake"></i>
+                <h3>Cumpleaños</h3>
+                <img src="img/evento 6.png" alt="Descripción de la imagen" class="welcome-image">
+                <p>
+                    Celebración en honor a una persona que cumple años, donde los snacks son esenciales para crear un ambiente festivo y delicioso, 
+                    adaptados a los gustos del homenajeado.
+                </p>
+            </div>
+            <div class="personal-1">
+                <i class="fas fa-heart"></i>
+                <h3>Eventos Corporativos</h3>
+                <img src="img/evento 5.png" alt="Descripción de la imagen" class="welcome-image">
+                <p>
+                    Un evento formal donde se presentan ponencias y charlas sobre temas relevantes, 
+                    acompañado de snacks que ofrecen a los asistentes energía y opciones para disfrutar durante las pausas.
+                </p>
+            </div>
+        </div>
+    </section>
+    
     <footer>
-        <p>© 2023 E'Chale Sabor - Todos los derechos reservados</p>
+        <div class="footer-bg" id="reserva">
+            <h2>Reserva Aquí</h2>
+            <form>
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Nombre" required>
+                    <input class="campo" type="tel" placeholder="Teléfono" required>
+                </div>
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Dirección" required>
+                    <input class="campo" type="email" placeholder="Correo" required>
+                </div>
+                <textarea class="campo" cols="30" rows="10" placeholder="Texto" required></textarea>
+                <input type="submit" value="Enviar" class="btn-1">
+            </form>
+        </div>
+        <div class="footer-txt">
+            <p>
+                © 2023 E'Chale Sabor - Todos los derechos reservados
+            </p>
+        </div>
     </footer>
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
-            color: #53372bc2;
-            text-align: center;
-            padding: 50px;
-        }
-        header {
-            background-color: #d4c2a1;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .main-title {
-            font-size: 3em; /* Tamaño de fuente más grande para "Contáctanos" */
-            margin: 0;
-        }
-        .sub-title {
-            font-size: 1.5em; /* Tamaño de fuente para subtítulos */
-            margin-top: 20px;
-        }
-        .contact-info, .social-media {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px #8542164f;
-        }
-        a {
-            color: #8b5a2b;
-            text-decoration: none;
-            display: inline-block;
-            margin: 5px 0;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .map {
-            margin: 20px 0;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #644d3e;
-            color: #ffffff;
-        }
-    </style>
 </body>
 </html>
