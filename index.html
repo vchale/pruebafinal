@@ -12,14 +12,14 @@
 
 <header class="header">
     <div class="menu container">
-        <a href="#inicio" class="logo">
-            <img src="img/logo.png" alt="Logo E'Chale Sabor" style="height: 50px;"> <!-- Ajusta la altura según sea necesario -->
+        <a href="#inicio" class="logo" aria-label="Ir a Inicio">
+            <img src="img/logo.png" alt="Logo de E'Chale Sabor" style="height: 50px;"> 
         </a>
-        <input type="checkbox" id="menu">
-        <label for="menu">
+        <input type="checkbox" id="menu" aria-hidden="true">
+        <label for="menu" aria-label="Menú">
             <img src="img/menu-icon.png" class="menu-icono" alt="Menú">
         </label>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navegación principal">
             <ul>
                 <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
                 <li><a href="#servicios"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
@@ -37,7 +37,7 @@
                 Ofrecemos una deliciosa variedad de snacks que harán de tu celebración una experiencia inolvidable. 
                 Desde pequeños encuentros hasta grandes fiestas. ¡Déjanos ser parte de tu celebración y sorprende a tus invitados!
             </p>
-            <a href="contacto.html" class="btn-1">Contáctanos</a>
+            <a href="#contacto" class="btn-1">Contáctanos</a>
         </div>
         <div class="header-dir">
             <div class="dir">
@@ -58,194 +58,152 @@
         </div>
     </div>
 </header>
-   
 
-    <section id="inicio" class="welcome">
-        <div class="welcome-1"></div>
-        <div class="welcome-2">
-            <h2>Bienvenido a tu snack bar favorito</h2>
-            <p class="b1">
-                En E'Chale Sabor, nos apasiona transformar cada evento en una celebración inolvidable. 
-                Ofrecemos snacks artesanales elaborados con ingredientes frescos y de calidad, porque creemos 
-                que cada bocado debe ser una experiencia única.
-            </p>
-            <p>
-                Nuestro compromiso con la excelencia se refleja en cada receta, 
-                donde sabores auténticos y presentaciones atractivas se combinan para deleitar a tus invitados. 
-                Trabajamos de la mano contigo para personalizar cada detalle, asegurando que nuestros snacks se alineen con la temática de tu evento.
-                Tu satisfacción y la de tus invitados son nuestra prioridad. En E'Chale Sabor, cada celebración merece un toque especial, y estamos aquí para hacerlo posible.
-            </p>
-        </div>
-    </section>
+<section id="inicio" class="welcome">
+    <div class="welcome-1"></div>
+    <div class="welcome-2">
+        <h2>Bienvenido a tu snack bar favorito</h2>
+        <p class="b1">
+            En E'Chale Sabor, nos apasiona transformar cada evento en una celebración inolvidable. 
+            Ofrecemos snacks artesanales elaborados con ingredientes frescos y de calidad, porque creemos 
+            que cada bocado debe ser una experiencia única.
+        </p>
+        <p>
+            Nuestro compromiso con la excelencia se refleja en cada receta, 
+            donde sabores auténticos y presentaciones atractivas se combinan para deleitar a tus invitados. 
+            Trabajamos de la mano contigo para personalizar cada detalle, asegurando que nuestros snacks se alineen con la temática de tu evento.
+            Tu satisfacción y la de tus invitados son nuestra prioridad. En E'Chale Sabor, cada celebración merece un toque especial, y estamos aquí para hacerlo posible.
+        </p>
+    </div>
+</section>
 
-    <main id="servicios" class="services container">
-        <div class="services-txt">
-            <h2>Nuestros Servicios</h2>
-            <hr>
-            <p>
-                Un servicio de snacks bar ofrece bocadillos y bebidas para eventos, oficinas, fiestas, reuniones o establecimientos. 
-                Los servicios pueden adaptarse según el tipo de evento y la audiencia. Aquí te detallo algunos de los servicios que 
-                suelen ofrecer los snacks bar:
-            </p>
+<main id="servicios" class="services container">
+    <div class="services-txt">
+        <h2>Nuestros Servicios</h2>
+        <hr>
+        <p>
+            Un servicio de snacks bar ofrece bocadillos y bebidas para eventos, oficinas, fiestas, reuniones o establecimientos. 
+            Los servicios pueden adaptarse según el tipo de evento y la audiencia. Aquí te detallo algunos de los servicios que 
+            suelen ofrecer los snacks bar:
+        </p>
+    </div>
+    <div class="services-group">
+        <div class="services-1">
+            <i class="fas fa-utensils"></i>
+            <h3>Mesas de Snacks Personalizadas</h3>
+            <ul>
+                <li><strong>Decoración temática:</strong> Se decora la mesa con una temática específica (cumpleaños, bodas, eventos corporativos).</li>
+                <li><strong>Variedad de snacks:</strong> Chips, galletas, dulces, chocolates, palomitas de maíz, y frutas.</li>
+                <li><strong>Opciones saludables:</strong> Frutas deshidratadas, nueces, yogur, y opciones sin azúcar.</li>
+            </ul>
         </div>
-        <div class="services-group">
-            <div class="services-1">
-                <i class="fas fa-utensils"></i>
-                <h3>Mesas de Snacks Personalizadas</h3>
-                <ul>
-                    <li><strong>Decoración temática:</strong> Se decora la mesa con una temática específica (cumpleaños, bodas, eventos corporativos).</li>
-                    <li><strong>Variedad de snacks:</strong> Chips, galletas, dulces, chocolates, palomitas de maíz, y frutas.</li>
-                    <li><strong>Opciones saludables:</strong> Frutas deshidratadas, nueces, yogur, y opciones sin azúcar.</li>
-                </ul>
-            </div>
-            <div class="services-1">
-                <i class="fas fa-birthday-cake"></i>
-                <h3>Paquetes para Oficinas</h3>
-                <ul>
-                    <li>Entrega regular de snacks variados para oficinas.</li>
-                    <li>Paquetes semanales o mensuales.</li>
-                    <li>Variedad que incluye opciones dulces y saladas para diferentes gustos.</li>
-                </ul>
-            </div>
-            <div class="services-1">
-                <i class="fas fa-cogs"></i>
-                <h3>Alquiler de Maquinaria</h3>
-                <ul>
-                    <li>Máquinas de palomitas de maíz, algodones de azúcar, y fuentes de chocolate.</li>
-                    <li>Servicios de montaje y desmontaje de la maquinaria.</li>
-                </ul>
-            </div>
-            <div class="services-1">
-                <i class="fas fa-user-friends"></i>
-                <h3>Personal de Servicio</h3>
-                <ul>
-                    <li>Para eventos más grandes, se incluye personal para servir y mantener la mesa de snacks organizada.</li>
-                    <li>Asistencia en cocteles, atención al cliente, y limpieza.</li>
-                </ul>
-            </div>
-            <div class="services-1">
-                <i class="fas fa-briefcase"></i>
-                <h3>Catering para Eventos Corporativos</h3>
-                <ul>
-                    <li>Servicio formal de snacks y bebidas para reuniones empresariales, capacitaciones, y conferencias.</li>
-                    <li>Opciones personalizables para adaptarse a la imagen de la empresa.</li>
-                </ul>
-            </div>
+        <div class="services-1">
+            <i class="fas fa-birthday-cake"></i>
+            <h3>Paquetes para Oficinas</h3>
+            <ul>
+                <li>Entrega regular de snacks variados para oficinas.</li>
+                <li>Paquetes semanales o mensuales.</li>
+                <li>Variedad que incluye opciones dulces y saladas para diferentes gustos.</li>
+            </ul>
         </div>
-        <a href="#" class="btn-1"> Más Información</a>
-    </main>  
+        <div class="services-1">
+            <i class="fas fa-cogs"></i>
+            <h3>Alquiler de Maquinaria</h3>
+            <ul>
+                <li>Máquinas de palomitas de maíz, algodones de azúcar, y fuentes de chocolate.</li>
+                <li>Servicios de montaje y desmontaje de la maquinaria.</li>
+            </ul>
+        </div>
+        <div class="services-1">
+            <i class="fas fa-user-friends"></i>
+            <h3>Personal de Servicio</h3>
+            <ul>
+                <li>Para eventos más grandes, se incluye personal para servir y mantener la mesa de snacks organizada.</li>
+                <li>Asistencia en cocteles, atención al cliente, y limpieza.</li>
+            </ul>
+        </div>
+        <div class="services-1">
+            <i class="fas fa-briefcase"></i>
+            <h3>Catering para Eventos Corporativos</h3>
+            <ul>
+                <li>Servicio formal de snacks y bebidas para reuniones empresariales, capacitaciones, y conferencias.</li>
+                <li>Opciones personalizables para adaptarse a la imagen de la empresa.</li>
+            </ul>
+        </div>
+    </div>
+    <a href="#" class="btn-1">Más Información</a>
+</main>  
 
-    <section id="precios" class="prices">
-        <div class="prices-1">
-            <h2>Lista de Precios</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing 
-                elit. Voluptatem repellendus, quae facilis.
-            </p>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Snacks dulces (x hora)</th>
-                        <td>s/.100 </td>
-                    </tr>
-                    <tr>
-                        <th>Snacks salados (x hora)</th>
-                        <td>s/.100 </td>
-                    </tr>
-                    <tr>
-                        <th>Snacks saludables (x hora)</th>
-                        <td>s/.100 </td>    
-                    </tr>
-                    <tr>
-                        <th>Snacks criollos (x hora)</th>
-                        <td>s/.100 </td>    
-                    </tr>
-                    <tr>
-                        <th>Snacks de quesos (x hora)</th>
-                        <td>s/.100 </td>    
-                    </tr>
-                    <tr>
-                        <th>Snacks vegetarianos (x hora)</th>
-                        <td>s/.100 </td>    
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="prices-2"></div>
-    </section>
+<section id="precios" class="prices">
+    <div class="prices-1">
+        <h2>Lista de Precios</h2>
+        <p>
+            Aquí puedes ver nuestra lista de precios para diferentes tipos de snacks que ofrecemos para tus eventos.
+        </p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Snacks dulces (x hora)</th>
+                    <td>s/.60 </td>
+                </tr>
+                <tr>
+                    <th>Snacks salados (x hora)</th>
+                    <td>s/.90 </td>
+                </tr>
+                <tr>
+                    <th>Snacks saludables (x hora)</th>
+                    <td>s/.100 </td>    
+                </tr>
+                <tr>
+                    <th>Snacks criollos (x hora)</th>
+                    <td>s/.150 </td>    
+                </tr>
+                <tr>
+                    <th>Snacks de quesos (x hora)</th>
+                    <td>s/.180 </td>    
+                </tr>
+                <tr>
+                    <th>Snacks vegetarianos (x hora)</th>
+                    <td>s/.130 </td>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="prices-2">
+        <img src="img/snacks.jpg" alt="Variedad de snacks" class="img-snacks">
+    </div>
+</section>
 
-    <section id="contacto" class="personal container">
-        <div class="personal-txt">
-            <h2>Nuestros Eventos</h2>
-            <hr>
-            <p>
-                Ofrecemos un servicio de catering personalizado para todo tipo de eventos, desde fiestas privadas hasta eventos corporativos. 
-                Nos encargamos de la selección y presentación de snacks, adaptados a las preferencias de tus invitados.
-            </p>
-        </div>
+<section id="reserva" class="contacto">
+    <div class="contacto-container">
+        <h2>Reserva Tu Evento</h2>
+        <form action="#" method="POST" aria-labelledby="reserva">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" aria-required="true">
 
-        <div class="personal-group">
-            <div class="personal-1">
-                <i class="fas fa-gift"></i>
-                <h3>Reuniones Sociales</h3>
-                <img src="img/evento 4.png" alt="Descripción de la imagen" class="welcome-image">
-                <p>
-                    Un encuentro informal entre amigos o familiares, ideal para disfrutar de deliciosos snacks mientras se comparten risas y buenos momentos.
-                </p>
-            </div>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="Tu correo" aria-required="true">
 
-            <div class="personal-1">
-                <i class="fas fa-glass-cheers"></i>
-                <h3>Eventos de Fiesta </h3>
-                <img src="img/evento 1.png" alt="Descripción de la imagen" class="welcome-image">
-                <p>
-                    Un evento exclusivo, como un cumpleaños o un aniversario, donde se ofrece una variedad 
-                    de snacks personalizados para satisfacer las preferencias de los asistentes.
-                </p>
-            </div>
-            <div class="personal-1">
-                <i class="fas fa-birthday-cake"></i>
-                <h3>Cumpleaños</h3>
-                <img src="img/evento 6.png" alt="Descripción de la imagen" class="welcome-image">
-                <p>
-                    Celebración en honor a una persona que cumple años, donde los snacks son esenciales para crear un ambiente festivo y delicioso, 
-                    adaptados a los gustos del homenajeado.
-                </p>
-            </div>
-            <div class="personal-1">
-                <i class="fas fa-heart"></i>
-                <h3>Eventos Corporativos</h3>
-                <img src="img/evento 5.png" alt="Descripción de la imagen" class="welcome-image">
-                <p>
-                    Un evento formal donde se presentan ponencias y charlas sobre temas relevantes, 
-                    acompañado de snacks que ofrecen a los asistentes energía y opciones para disfrutar durante las pausas.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-bg" id="reserva">
-            <h2>Reserva Aquí</h2>
-            <form>
-                <div class="campo-1">
-                    <input class="campo" type="text" placeholder="Nombre" required>
-                    <input class="campo" type="tel" placeholder="Teléfono" required>
-                </div>
-                <div class="campo-1">
-                    <input class="campo" type="text" placeholder="Dirección" required>
-                    <input class="campo" type="email" placeholder="Correo" required>
-                </div>
-                <textarea class="campo" cols="30" rows="10" placeholder="Texto" required></textarea>
-                <input type="submit" value="Enviar" class="btn-1">
-            </form>
-        </div>
-        <div class="footer-txt">
-            <p>
-                © 2023 E'Chale Sabor - Todos los derechos reservados
-            </p>
-        </div>
-    </footer>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Tu teléfono" aria-required="true">
+
+            <label for="fecha">Fecha del Evento:</label>
+            <input type="date" id="fecha" name="fecha" required aria-required="true">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Déjanos un mensaje"></textarea>
+
+            <button type="submit" class="btn-1">Enviar Reserva</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="footer-txt">
+        <p>
+            © 2023 E'Chale Sabor - Todos los derechos reservados
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>

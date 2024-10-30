@@ -18,25 +18,25 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px; /* Evita que el contenido toque los bordes en pantallas pequeñas */
 }
 
 .header {
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #fff8ea; 
     min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #fff8ea; 
+    position: relative;
+    animation: fadeIn 1s ease; /* Animación al cargar */
 }
 
 .menu {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 20px;
+    left: 20px;
+    right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,15 +44,18 @@ body {
 }
 
 .logo {
-    background-image: url(img/logo.png);
     font-size: 24px;
     color: #8b5a2b; 
     font-weight: 800;
     text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #c19a6b; /* Efecto hover para el logo */
 }
 
 .navbar ul li {
-    position: relative;
     float: left;
 }
 
@@ -60,11 +63,12 @@ body {
     font-size: 14px;
     padding: 20px;
     color: #6635196e;
-    display: block;
+    transition: color 0.3s, transform 0.3s; /* Transición suave */
 }
 
 .navbar ul li a:hover {
     color: #c19a6b; 
+    transform: translateY(-2px); /* Movimiento en hover */
 }
 
 #menu {
@@ -82,11 +86,11 @@ body {
 
 .header-txt {
     margin-bottom: 45px;
+    animation: slideInUp 0.5s ease; /* Animación de entrada */
 }
 
 .header-txt h1, 
-.header-txt span, 
-.header-txt h3 {
+.header-txt span {
     font-size: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -101,8 +105,9 @@ body {
 
 .header-txt p {
     color: #4a4a4a; 
-    padding: 0 250px;
+    padding: 0 50px; /* Ajustado para pantallas pequeñas */
     margin: 25px 0;
+    line-height: 1.6; /* Mejor legibilidad */
 }
 
 .btn-1 {
@@ -116,10 +121,13 @@ body {
     font-family: 'Bebas Neue', cursive;
     margin: 25px 0;
     border: 0;
+    border-radius: 5px; /* Añadido para un mejor diseño */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
 }
 
 .btn-1:hover {
     background-color: #c19a6b;
+    transform: scale(1.05); /* Efecto de escala en hover */
 }
 
 .header-dir {
@@ -141,19 +149,21 @@ body {
 
 .welcome {
     display: flex;
+    flex-direction: row; /* Ajustado para una mejor disposición */
 }
 
 .welcome-1 {
     background-image: url(img/LOGO\ ECHALE\ SABOR.png);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
+    animation: slideInLeft 0.5s ease; /* Animación de entrada */
 }
 
 .welcome-2 {
     width: 50%;
-    padding: 150px 250px 150px 100px;
+    padding: 150px 50px; /* Ajustado para pantallas pequeñas */
     background-color: #d4c2a1; 
 }
 
@@ -189,20 +199,27 @@ hr {
 }
 
 .services-txt p {
-    padding: 50px 150px;
+    padding: 50px 20px; /* Ajustado para pantallas pequeñas */
 }
 
 .service-group {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
     margin: 45px 0;
 }
 
 .services-1 {
-    background-color: #8b592b69; 
+    background-color: rgba(139, 89, 43, 0.69); 
     padding: 35px 25px;
-    margin: 0 10px;
+    margin: 10px;
     border-radius: 15px;
+    flex: 1 1 300px; /* Añadido para que se ajusten en pantallas pequeñas */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.services-1:hover {
+    transform: translateY(-5px); /* Efecto de elevación en hover */
 }
 
 .services-1 img {
@@ -215,18 +232,14 @@ hr {
     color: #FFFFFF; 
 }
 
-.services-1 a {
-    color: #c19a6b; 
-    font-size: 16px;
-}
-
 .prices {
     display: flex;
+    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
 }
 
 .prices-1 {
     width: 50%;
-    padding: 150px 250px 150px 100px;
+    padding: 150px 50px; /* Ajustado para pantallas pequeñas */
     background-color: #d4c2a1; 
 }
 
@@ -238,10 +251,12 @@ table {
 }
 
 tr {
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid #afafaf;
-    margin-bottom: 20px;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+tr:hover {
+    background-color: rgba(139, 89, 43, 0.1); /* Efecto hover en las filas */
 }
 
 th {
@@ -255,60 +270,20 @@ td {
 
 .prices-2 {
     background-image: url(img/lista.png);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
 }
 
-.personal {
+.contacto {
     padding: 100px 0;
     text-align: center;
 }
 
-.personal-txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.personal-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px;
-}
-
-.personal-1 {
-    text-align: center;
-}
-
-.personal-1 img {
-    width: 250px;
-    border-radius: 15px;
-    margin-bottom: 25px;
-}
-
-.personal-1 h3 {
-    font-size: 22px;
-}
-
-.personal-1 p {
-    padding: 0 50px;
-}
-
-.personal-1 a {
-    color: #c19a6b; 
-}
-
-.footer-bg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    background-color: #c0ac93e3; 
+.contacto-container {
+    max-width: 600px;
+    margin: 0 auto; /* Centrado del formulario */
 }
 
 form {
@@ -317,24 +292,37 @@ form {
     align-items: center;
 }
 
-.campo-1 {
-    margin-bottom: 15px;
+label {
+    margin-bottom: 5px; /* Mejora la separación de los campos */
+    font-weight: bold;
 }
 
-.campo {
+input, textarea {
     margin: 5px;
-    padding: 20px 15px;
-    width: 250px;
+    padding: 15px;
+    width: 100%; /* Se adapta al contenedor */
+    max-width: 400px; /* Tamaño máximo para mantener la legibilidad */
     background-color: #e2dbccf1; 
     border: 1px solid #8b5a2b; 
     outline: none;
     border-radius: 10px;
     color: #2b2a2a; 
     font-size: 14px;   
+    transition: border-color 0.3s; /* Transición suave */
+}
+
+input:focus, textarea:focus {
+    border-color: #c19a6b; /* Cambio de color al enfocar */
 }
 
 textarea {
-    width: 520px !important;
+    height: 100px; /* Establecer altura para el área de texto */
+}
+
+.footer-bg {
+    background-color: #c0ac93e3; 
+    text-align: center;
+    padding: 100px 0;
 }
 
 .footer-txt {
@@ -344,7 +332,40 @@ textarea {
     color: #FFFFFF; 
 }
 
-@media(max-width:991px) {
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media(max-width: 991px) {
     .menu {
         padding: 20px;
     }
@@ -375,8 +396,7 @@ textarea {
     }
 
     .header-txt h1, 
-    .header-txt span, 
-    .header-txt h3 {
+    .header-txt span {
         font-size: 60px; 
     }
 
@@ -385,7 +405,7 @@ textarea {
     }
 
     .welcome-2 {
-        padding: 50px 50px;
+        padding: 50px 20px; 
     }
 
     h2 {
