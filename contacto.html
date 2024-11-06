@@ -114,6 +114,7 @@
 <footer>
     <p>© 2023 E'Chale Sabor - Todos los derechos reservados</p>
 </footer>
+
 <style>
 body {
     font-family: 'Poppins', sans-serif;
@@ -121,12 +122,12 @@ body {
     color: #53372bc2;
     text-align: center;
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
 header {
     background-color: #d4c2a1;
-    padding: 10px 20px;
+    padding: 10px 5%;
     border-radius: 10px;
 }
 
@@ -154,7 +155,7 @@ a:hover {
 }
 
 .personal {
-    padding: 50px 0;
+    padding: 50px 5%;
     text-align: center;
 }
 
@@ -180,7 +181,8 @@ a:hover {
 }
 
 .personal-1 img {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     border-radius: 15px;
     margin-bottom: 25px;
 }
@@ -190,7 +192,7 @@ a:hover {
 }
 
 .personal-1 p {
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .personal-1 a {
@@ -203,7 +205,6 @@ footer, footer * {
     background-color: #9c4d1923;
     color: #ffffff;
 }
-
 
 .header-content {
     margin-top: 0;
@@ -223,18 +224,28 @@ main, .header {
     overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+    .personal-group {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     .personal-group {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
-    
+
     .personal-1 img {
-        width: 80%; 
+        width: 80%;
     }
-    
+
     .personal-1 p {
-        padding: 0 20px; 
+        padding: 0 20px;
+    }
+
+    footer {
+        text-align: center;
     }
 
     .footer-txt {
@@ -242,8 +253,16 @@ main, .header {
     }
 }
 
+@media (max-width: 480px) {
+    .personal-txt h2 {
+        font-size: 20px;
+    }
 
+    .personal-1 h3 {
+        font-size: 18px;
+    }
+}
 </style>
+
 </body>
 </html>
-
