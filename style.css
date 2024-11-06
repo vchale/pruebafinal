@@ -16,9 +16,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%; 
     margin: 0 auto;
-    padding: 0 20px; /* Evita que el contenido toque los bordes en pantallas pequeñas */
+    padding: 0 20px; 
 }
 
 .header {
@@ -29,50 +29,40 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    animation: fadeIn 1s ease; /* Animación al cargar */
+    animation: fadeIn 1s ease; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-direction: row; 
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    display: flex;
+    align-items: center ;
+}
+
+.logo img {
+
 }
 
 .menu {
     position: absolute;
     top: 20px;
-    left: 20px;
-    right: 20px;
+    left: 0px;
+    right: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 24px;
-    color: #8b5a2b; 
-    font-weight: 800;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-.logo:hover {
-    color: #c19a6b; /* Efecto hover para el logo */
-}
-
-.navbar ul li {
-    float: left;
-}
-
-.navbar ul li a {
-    font-size: 14px;
+    justify-content: flex-end;
+    width: 100%;
     padding: 20px;
-    color: #6635196e;
-    transition: color 0.3s, transform 0.3s; /* Transición suave */
-}
-
-.navbar ul li a:hover {
-    color: #c19a6b; 
-    transform: translateY(-2px); /* Movimiento en hover */
-}
-
-#menu {
-    display: none;
 }
 
 .menu-icono {
@@ -84,9 +74,41 @@ body {
     display: none;
 }
 
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+}
+
+.navbar ul li a {
+    font-size: 14px;
+    padding: 20px;
+    color: #6635196e;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #c19a6b;
+    transform: translateY(-2px);
+}
+
+#menu {
+    display: none;
+}
+
 .header-txt {
     margin-bottom: 45px;
-    animation: slideInUp 0.5s ease; /* Animación de entrada */
+    margin-top: 100px;
+    animation: slideInUp 0.5s ease;
 }
 
 .header-txt h1, 
@@ -105,9 +127,9 @@ body {
 
 .header-txt p {
     color: #4a4a4a; 
-    padding: 0 50px; /* Ajustado para pantallas pequeñas */
+    padding: 0 50px;
     margin: 25px 0;
-    line-height: 1.6; /* Mejor legibilidad */
+    line-height: 1.6;
 }
 
 .btn-1 {
@@ -121,13 +143,13 @@ body {
     font-family: 'Bebas Neue', cursive;
     margin: 25px 0;
     border: 0;
-    border-radius: 5px; /* Añadido para un mejor diseño */
-    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-1:hover {
     background-color: #c19a6b;
-    transform: scale(1.05); /* Efecto de escala en hover */
+    transform: scale(1.05);
 }
 
 .header-dir {
@@ -149,21 +171,32 @@ body {
 
 .welcome {
     display: flex;
-    flex-direction: row; /* Ajustado para una mejor disposición */
+    flex-direction: row;
 }
 
 .welcome-1 {
-    background-image: url(img/LOGO\ ECHALE\ SABOR.png);
+    background-image: url(img/LOGO_ECHALE_SABOR.png); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
     animation: slideInLeft 0.5s ease;
+    position: relative; 
+}
+
+.text-overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    color: white; 
+    padding: 20px; 
+    text-align: center;
 }
 
 .welcome-2 {
     width: 50%;
-    padding: 150px 50px; /* Ajustado para pantallas pequeñas */
+    padding: 150px 50px;
     background-color: #d4c2a1; 
 }
 
@@ -199,13 +232,13 @@ hr {
 }
 
 .services-txt p {
-    padding: 50px 20px; /* Ajustado para pantallas pequeñas */
+    padding: 50px 20px;
 }
 
 .service-group {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
     margin: 45px 0;
 }
 
@@ -214,16 +247,17 @@ hr {
     padding: 35px 25px;
     margin: 10px;
     border-radius: 15px;
-    flex: 1 1 300px; /* Añadido para que se ajusten en pantallas pequeñas */
-    transition: transform 0.3s; /* Transición suave */
+    flex: 1 1 300px;
+    transition: transform 0.3s;
 }
 
 .services-1:hover {
-    transform: translateY(-5px); /* Efecto de elevación en hover */
+    transform: translateY(-5px);
 }
 
 .services-1 img {
-    width: 25px;
+    max-width: 100%; 
+    height: auto; 
     margin-bottom: 15px;
 }
 
@@ -234,12 +268,12 @@ hr {
 
 .prices {
     display: flex;
-    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 .prices-1 {
     width: 50%;
-    padding: 150px 50px; /* Ajustado para pantallas pequeñas */
+    padding: 150px 50px;
     background-color: #d4c2a1; 
 }
 
@@ -252,11 +286,11 @@ table {
 
 tr {
     border-bottom: 1px solid #afafaf;
-    transition: background-color 0.3s; /* Transición suave */
+    transition: background-color 0.3s;
 }
 
 tr:hover {
-    background-color: rgba(139, 89, 43, 0.1); /* Efecto hover en las filas */
+    background-color: rgba(139, 89, 43, 0.1);
 }
 
 th {
@@ -269,11 +303,43 @@ td {
 }
 
 .prices-2 {
-    background-image: url(img/lista.png);
+    background-image: url(img/lista.png); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
+    animation: slideInLeft 0.5s ease;
+    position: relative; 
+}
+
+.prices-2 .text-overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    color: white; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.prices-2 h2 {
+    font-size: 60px;
+    line-height: 70px;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+.prices-2 p {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    line-height: 1.6;
 }
 
 .contacto {
@@ -283,7 +349,7 @@ td {
 
 .contacto-container {
     max-width: 600px;
-    margin: 0 auto; /* Centrado del formulario */
+    margin: 0 auto;
 }
 
 form {
@@ -308,7 +374,7 @@ input, textarea {
     border-radius: 10px;
     color: #2b2a2a; 
     font-size: 14px;   
-    transition: border-color 0.3s; 
+    transition: border-color 0.3s;
 }
 
 input:focus, textarea:focus {
@@ -324,13 +390,16 @@ textarea {
     text-align: center;
     padding: 100px 0;
 }
-
+footer, footer * {
+    color: #ffffff; 
+}
 .footer-txt {
     text-align: center;
     padding: 10px;
-    background-color: hsla(32, 55%, 35%, 0.836); 
-    color: #FFFFFF; 
+    background-color: #c19a6b; 
+    color: #ffffff; 
 }
+
 
 
 @keyframes fadeIn {
@@ -364,64 +433,73 @@ textarea {
     }
 }
 
-
-@media(max-width: 991px) {
-    .menu {
-        padding: 20px;
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; 
+        text-align: center;
     }
 
-    .menu label {
-        display: initial;
+    .header-left, .header-right {
+        flex: none;
     }
 
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #d4c2a1; 
-        display: none;
+    .header-txt h1, .header-txt span {
+        font-size: 50px;
     }
 
-    .navbar ul li {
-        width: 100%;
+    .header-dir {
+        flex-direction: column; 
+        text-align: center;
     }
 
-    #menu:checked ~ .navbar {
-        display: initial;
+    .welcome {
+        flex-direction: column; 
+        align-items: center;
     }
 
-    .header {
-        min-height: 50vh;
-    }
-
-    .header-txt h1, 
-    .header-txt span {
-        font-size: 60px; 
-    }
-
-    .header-txt span {
-        font-size: 20px;
+    .welcome-1 {
+        width: 100%; 
+        height: 300px;
+        background-size: cover;
     }
 
     .welcome-2 {
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .services {
         padding: 50px 20px; 
     }
 
-    h2 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
     .service-group {
-        flex-direction: column;
+        flex-direction: column; 
+        align-items: center;
     }
 
-    .services-1 {
-        margin: 10px 0;
+    .prices {
+        flex-direction: column; 
     }
 
-    .personal-group {
-        flex-direction: column;
+    .prices-1, .prices-2 {
+        width: 100%; 
+        padding: 20px; 
+    }
+
+    .prices-2 {
+        height: 300px;
+        background-size: cover;
+        background-position: top; 
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .contacto-container {
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    .footer-txt {
+        padding: 10px;
     }
 }

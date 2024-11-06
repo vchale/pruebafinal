@@ -2,82 +2,248 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - E'Chale Sabor</title>
+    <title>E'Chale Sabor</title>
+    <link rel="icon" href="img/LOGO_ECHALE_SABOR.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Contáctanos</h1>
-        <p>Estamos aquí para ayudarte. ¡No dudes en comunicarte con nosotros!</p>
-    </header>
 
-    <main>
-        <section class="contact-info">
-            <h2>Información de Contacto</h2>
-            <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 997001556</p>
-            <p><i class="fas fa-envelope"></i> <strong>Correo Electrónico:</strong> contacto@echalesabor.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Jr. Salaverry 109 - Lima, Perú</p>
-        </section>
+<header class="header">
+    <div class="menu container">
+        <a href="index.html" class="logo" aria-label="Ir a la página de inicio">
+            <img src="img/logo.png" alt="Logo de E'Chale Sabor" style="height: 50px;"> 
+        </a>
+        <input type="checkbox" id="menu" aria-hidden="true">
+        <label for="menu" aria-label="Abrir menú">
+            <img src="img/rounded_13741165.png" class="menu-icono" alt="Ícono del menú">
+        </label>
+        <nav class="navbar" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" aria-label="Ir a la página de inicio"><i class="fas fa-home"></i> Inicio</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <section id="map" class="map">
-            <h2>Ubicación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.012574843016!2d-77.02117168570365!3d-12.046456861825438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c4b1a2c8b7b7%3A0xa313eb46c448fa66!2sJr.%20Salaverry%20109%2C%20Lima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sco!4v1695848679001!5m2!1ses-419!2sco" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+<main>
+    <section class="header-content container">
+        <div class="header-txt">
+            <h1>E'Chale Sabor</h1>
+            <span>Snacks Bar</span>
+            <p>
+                Bienvenido a E'Chale Sabor: tu aliado perfecto para cualquier evento. 
+                Ofrecemos una deliciosa variedad de snacks que harán de tu celebración una experiencia inolvidable. 
+                Desde pequeños encuentros hasta grandes fiestas. ¡Déjanos ser parte de tu celebración y sorprende a tus invitados!
+            </p>
+            <img src="img/LOGO_ECHALE_SABOR.png" alt="Logo de E'Chale Sabor" style="height: 500px;"> 
+        </div>
+    </section>
 
-        <section class="social-media">
-            <h2>Síguenos en Redes Sociales</h2>
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-        </section>
-    </main>
+    <section class="contact-info">
+        <h2>Información de Contacto</h2>
+        <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 997001556</p>
+        <p><i class="fas fa-envelope"></i> <strong>Correo Electrónico:</strong> contacto@echalesabor.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Jr. Salaverry 109 - Lima, Perú</p>
+    </section>
 
-    <footer>
-        <p>© 2023 E'Chale Sabor - Todos los derechos reservados</p>
-    </footer>
+    <section id="map" class="map">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.012574843016!2d-77.02117168570365!3d-12.046456861825438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c4b1a2c8b7b7%3A0xa313eb46c448fa66!2sJr.%20Salaverry%20109%2C%20Lima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sco!4v1695848679001!5m2!1ses-419!2sco" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Ubicación de E'Chale Sabor en Google Maps"></iframe>
+    </section>
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
-            color: #53372bc2;
-            text-align: center;
-            padding: 50px;
-        }
-        header {
-            background-color: #d4c2a1;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .contact-info, .social-media {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #d4c2a1;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px #8542164f;
-        }
-        a {
-            color: #8b5a2b;
-            text-decoration: none;
-            display: inline-block;
-            margin: 5px 0;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .map {
-            margin: 20px 0;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #9c4d1938;
-            color: #ffffff;
-        }
-    </style>
+    <section class="personal">
+        <div class="personal-txt">
+            <h2>Tipos de Eventos</h2>
+            <p>Tenemos opciones para diferentes tipos de celebraciones. Encuentra el evento que mejor se ajuste a tus necesidades.</p>
+        </div>
+
+        <div class="personal-group">
+            <div class="personal-1">
+                <i class="fas fa-gift"></i>
+                <h3>Reuniones Sociales</h3>
+                <img src="img/evento 4.png" alt="Reunión social con snacks" class="welcome-image">
+                <p>
+                    Un encuentro informal entre amigos o familiares, ideal para disfrutar de deliciosos snacks mientras se comparten risas y buenos momentos.
+                </p>
+            </div>
+
+            <div class="personal-1">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Eventos de Fiesta</h3>
+                <img src="img/evento 1.png" alt="Fiesta con snacks" class="welcome-image">
+                <p>
+                    Un evento exclusivo, como un cumpleaños o un aniversario, donde se ofrece una variedad 
+                    de snacks personalizados para satisfacer las preferencias de los asistentes.
+                </p>
+            </div>
+
+            <div class="personal-1">
+                <i class="fas fa-birthday-cake"></i>
+                <h3>Cumpleaños</h3>
+                <img src="img/evento 6.png" alt="Celebración de cumpleaños con snacks" class="welcome-image">
+                <p>
+                    Celebración en honor a una persona que cumple años, donde los snacks son esenciales para crear un ambiente festivo y delicioso, 
+                    adaptados a los gustos del homenajeado.
+                </p>
+            </div>
+
+            <div class="personal-1">
+                <i class="fas fa-heart"></i>
+                <h3>Eventos Corporativos</h3>
+                <img src="img/evento 5.png" alt="Evento corporativo con snacks" class="welcome-image">
+                <p>
+                    Un evento formal donde se presentan ponencias y charlas sobre temas relevantes, 
+                    acompañado de snacks que ofrecen a los asistentes energía y opciones para disfrutar durante las pausas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <h2>Síguenos en Redes Sociales</h2>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Ir a Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Ir a Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="Ir a Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+    </section>
+</main>
+
+<footer>
+    <p>© 2023 E'Chale Sabor - Todos los derechos reservados</p>
+</footer>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #53372bc2;
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+}
+
+header {
+    background-color: #d4c2a1;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.contact-info, .personal {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #d4c2a1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #8542164f;
+}
+
+a {
+    color: #8b5a2b;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.map {
+    margin: 20px 0;
+}
+
+.personal {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.personal-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.personal-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.personal-1 {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.personal-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.personal-1 h3 {
+    font-size: 22px;
+}
+
+.personal-1 p {
+    padding: 0 50px;
+}
+
+.personal-1 a {
+    color: #c19a6b;
+}
+
+footer, footer * {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9c4d1923;
+    color: #ffffff;
+}
+
+
+.header-content {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+main, .header {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.header-txt, .header-content {
+    margin-top: 0;
+}
+
+.header {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .personal-group {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .personal-1 img {
+        width: 80%; 
+    }
+    
+    .personal-1 p {
+        padding: 0 20px; 
+    }
+
+    .footer-txt {
+        padding: 10px;
+    }
+}
+
+
+</style>
 </body>
 </html>
+
