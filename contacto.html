@@ -11,18 +11,14 @@
 </head>
 <body>
 
-<header class="header">
-    <div class="menu container">
-        <a href="index.html" class="logo" aria-label="Ir a la página de inicio">
-            <img src="img/logo.png" alt="Logo de E'Chale Sabor" style="height: 50px;"> 
+<header>
+    <div class="header-container">
+        <a href="/" class="logo">
+            <img src="img/LOGO_ECHALE_SABOR.png" alt="Logo E'Chale Sabor">
         </a>
-        <input type="checkbox" id="menu" aria-hidden="true">
-        <label for="menu" aria-label="Abrir menú">
-            <img src="img/rounded_13741165.png" class="menu-icono" alt="Ícono del menú">
-        </label>
-        <nav class="navbar" aria-label="Navegación principal">
+        <nav class="navigation">
             <ul>
-                <li><a href="index.html" aria-label="Ir a la página de inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Regresar al inicio</a></li>
             </ul>
         </nav>
     </div>
@@ -34,11 +30,10 @@
             <h1>E'Chale Sabor</h1>
             <span>Snacks Bar</span>
             <p>
-                Bienvenido a E'Chale Sabor: tu aliado perfecto para cualquier evento. 
-                Ofrecemos una deliciosa variedad de snacks que harán de tu celebración una experiencia inolvidable. 
-                Desde pequeños encuentros hasta grandes fiestas. ¡Déjanos ser parte de tu celebración y sorprende a tus invitados!
+                Si tienes alguna duda o necesitas más información sobre nuestros servicios, no dudes en contactarnos.
+                Estamos aquí para ayudarte a hacer de tu evento algo único y delicioso.
             </p>
-            <img src="img/LOGO_ECHALE_SABOR.png" alt="Logo de E'Chale Sabor" style="height: 500px;"> 
+            <img src="img/presentacion.png" alt="presentacion"> 
         </div>
     </section>
 
@@ -55,14 +50,14 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Ubicación de E'Chale Sabor en Google Maps"></iframe>
     </section>
 
-    <section class="personal">
-        <div class="personal-txt">
+    <section class="events">
+        <div class="events-txt">
             <h2>Tipos de Eventos</h2>
             <p>Tenemos opciones para diferentes tipos de celebraciones. Encuentra el evento que mejor se ajuste a tus necesidades.</p>
         </div>
 
-        <div class="personal-group">
-            <div class="personal-1">
+        <div class="events-group">
+            <div class="event">
                 <i class="fas fa-gift"></i>
                 <h3>Reuniones Sociales</h3>
                 <img src="img/evento 4.png" alt="Reunión social con snacks" class="welcome-image">
@@ -71,7 +66,7 @@
                 </p>
             </div>
 
-            <div class="personal-1">
+            <div class="event">
                 <i class="fas fa-glass-cheers"></i>
                 <h3>Eventos de Fiesta</h3>
                 <img src="img/evento 1.png" alt="Fiesta con snacks" class="welcome-image">
@@ -80,8 +75,10 @@
                     de snacks personalizados para satisfacer las preferencias de los asistentes.
                 </p>
             </div>
+        </div>
 
-            <div class="personal-1">
+        <div class="events-group">
+            <div class="event">
                 <i class="fas fa-birthday-cake"></i>
                 <h3>Cumpleaños</h3>
                 <img src="img/evento 6.png" alt="Celebración de cumpleaños con snacks" class="welcome-image">
@@ -91,7 +88,7 @@
                 </p>
             </div>
 
-            <div class="personal-1">
+            <div class="event">
                 <i class="fas fa-heart"></i>
                 <h3>Eventos Corporativos</h3>
                 <img src="img/evento 5.png" alt="Evento corporativo con snacks" class="welcome-image">
@@ -116,6 +113,17 @@
 </footer>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
@@ -129,9 +137,70 @@ header {
     background-color: #d4c2a1;
     padding: 10px 5%;
     border-radius: 10px;
+    box-shadow: 0 2px 5px #8542164f;
 }
 
-.contact-info, .personal {
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 100px;
+    width: auto;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation ul li a {
+    font-size: 16px;
+    color: #8b5a2b;
+    padding: 10px;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.header-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header-txt h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #8b5a2b;
+    margin-bottom: 10px;
+}
+
+.header-txt span {
+    font-size: 30px;
+}
+
+.header-txt p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-top: 20px;
+}
+
+.header-txt img {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+.contact-info, .event {
     margin: 20px 0;
     padding: 20px;
     background-color: #d4c2a1;
@@ -139,127 +208,125 @@ header {
     box-shadow: 0 2px 5px #8542164f;
 }
 
-a {
-    color: #8b5a2b;
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px 0;
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    word-wrap: break-word;
 }
 
-a:hover {
-    text-decoration: underline;
+.contact-info i {
+    margin-right: 10px;
 }
 
-.map {
-    margin: 20px 0;
+#map iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
 }
 
-.personal {
-    padding: 50px 5%;
-    text-align: center;
-}
-
-.personal-txt {
+.events-group {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.personal-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.personal-1 {
-    flex: 1 1 200px;
-    margin: 10px;
+.event {
+    flex: 1;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.personal-1 img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 15px;
-    margin-bottom: 25px;
+.event img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.personal-1 h3 {
-    font-size: 22px;
+.social-media a {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 20px;
+    color: #53372bc2;
 }
 
-.personal-1 p {
-    padding: 0 20px;
+.social-media a:hover {
+    color: #d4c2a1;
 }
 
-.personal-1 a {
-    color: #c19a6b;
+footer {
+    background-color: #53372bc2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 footer, footer * {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #9c4d1923;
-    color: #ffffff;
-}
-
-.header-content {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-main, .header {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.header-txt, .header-content {
-    margin-top: 0;
-}
-
-.header {
-    overflow: hidden;
-}
-
-@media (max-width: 1024px) {
-    .personal-group {
-        justify-content: center;
-    }
+    color: #ffffff; 
 }
 
 @media (max-width: 768px) {
-    .personal-group {
+    .header-txt img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .header-txt h1 {
+        font-size: 40px;
+    }
+
+    .header-txt span {
+        font-size: 20px;
+    }
+
+    .events-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .event {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .event img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    main, footer {
+        padding: 20px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #map iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .events {
+        padding: 30px 10%;
+    }
+
+    .social-media a {
+        font-size: 16px;
+        margin: 10px 5px;
+    }
+
+    .header-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .personal-1 img {
-        width: 80%;
-    }
-
-    .personal-1 p {
-        padding: 0 20px;
-    }
-
-    footer {
-        text-align: center;
-    }
-
-    .footer-txt {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .personal-txt h2 {
-        font-size: 20px;
-    }
-
-    .personal-1 h3 {
-        font-size: 18px;
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 </style>

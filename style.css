@@ -12,7 +12,7 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #f5f5f5; 
-    color: #4a4a4a; 
+    color: #533725; 
 }
 
 .container {
@@ -30,6 +30,7 @@ body {
     text-align: center;
     position: relative;
     animation: fadeIn 1s ease; 
+    padding: 0 20px; 
 }
 
 .header-container {
@@ -113,7 +114,7 @@ body {
 
 .header-txt h1, 
 .header-txt span {
-    font-size: 90px;
+    font-size: 100px;
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
@@ -196,8 +197,16 @@ body {
 
 .welcome-2 {
     width: 50%;
-    padding: 150px 50px;
+    padding: 150px 50px; 
     background-color: #d4c2a1; 
+}
+
+.welcome-2 {
+    margin: 0;
+    padding: 20px;
+    background-color: #d4c2a1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #8542164f;
 }
 
 h2 {
@@ -216,7 +225,7 @@ p {
 }
 
 .services {
-    padding: 100px 0;
+    padding: 100px 0; 
     text-align: center;
 }
 
@@ -232,7 +241,7 @@ hr {
 }
 
 .services-txt p {
-    padding: 50px 20px;
+    padding: 50px 20px; 
 }
 
 .service-group {
@@ -343,7 +352,7 @@ td {
 }
 
 .contacto {
-    padding: 100px 0;
+    padding: 100px 0; 
     text-align: center;
 }
 
@@ -385,22 +394,16 @@ textarea {
     height: 100px; 
 }
 
-.footer-bg {
-    background-color: #c0ac93e3; 
+footer {
     text-align: center;
-    padding: 100px 0;
+    padding: 20px;
+    background-color: #53372bc2;
+    color: #fff;
 }
+
 footer, footer * {
     color: #ffffff; 
 }
-.footer-txt {
-    text-align: center;
-    padding: 10px;
-    background-color: #c19a6b; 
-    color: #ffffff; 
-}
-
-
 
 @keyframes fadeIn {
     from {
@@ -494,12 +497,7 @@ footer, footer * {
         align-items: flex-start;
     }
 
-    .contacto-container {
-        width: 100%; 
-        max-width: 100%;
-    }
-
-    .footer-txt {
-        padding: 10px;
+    .contacto {
+        padding: 50px 20px; 
     }
 }
